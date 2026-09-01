@@ -1,0 +1,55 @@
+server:
+  port: 8080
+#  max-http-header-size: 16384
+
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-2vcv4l0wdwe1n6o686o.mysql.cn-chengdu.rds.aliyuncs.com:3306/ai_lesson_preparation
+    username: jqj
+    password: J123456@
+  redis:
+    host: localhost
+    port: 6379
+    password: ""
+    database: 0
+#    TODO
+#    cache:
+#      file-page:
+#        timeto-live: 5m
+#        cache-null-value: false
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+
+  global-config:
+    db-config:
+      logic-delete-value: 0       # 删除时的值
+      logic-not-delete-value: 1   # 未删除的值
+ai:
+  jwt:
+    user-secret-key: AiTeachPreparation_SecretKey_JWT112222222
+    user-TTL: 7200000
+    user-token-name: token
+logging:
+  level:
+    com:
+      ai:
+        common: warn
+        service: warn
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    prometheus:
+      enabled: true
+  metrics:
+    tags:
+      application: ai-teach-prep

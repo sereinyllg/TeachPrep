@@ -1,0 +1,12 @@
+D:\ai\common\src\main\java\com\common\exception\ForbiddenException.java
+D:\ai\common\src\main\java\com\common\utils\CaptchaUtils.java
+D:\ai\common\src\main\java\com\common\exception\UnauthorizedException.java
+D:\ai\common\src\main\java\com\common\result\Result.java
+D:\ai\common\src\main\java\com\common\enums\UserStatus.java
+D:\ai\common\src\main\java\com\common\context\BaseContext.java
+D:\ai\common\src\main\java\com\common\exception\BizIllegalException.java
+D:\ai\common\src\main\java\com\common\exception\DbException.java
+D:\ai\common\src\main\java\com\common\properties\JwtProperties.java
+D:\ai\common\src\main\java\com\common\utils\JwtUtil.java
+D:\ai\common\src\main\java\com\common\exception\CommonException.java
+D:\ai\common\src\main\java\com\common\exception\BadRequestException.java
